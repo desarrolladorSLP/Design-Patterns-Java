@@ -1,0 +1,11 @@
+//Creational
+include 'Singleton'
+
+//include 'AbstractFactory', 'FactoryMethod', 'Builder', 'Singleton', 'Prototype', 'ObjectPool'
+
+//Behavioral
+//include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State', 'ChainOfResponsability', 'Visitor', "Interpreter"
+
+//Structural
+//include 'Adapter', 'Proxy', 'Facade', 'Composite', 'Decorator'
+
