@@ -41,7 +41,7 @@ public class InterpreterTest {
         Context context;
 
         context = new Context().setVariable("var1", 1).setVariable("var2", 10);
-        assertEquals("Evaluation fails", 20.0, expression.evaluate(context));
+        assertEquals("Evaluation fails ", 20.0, expression.evaluate(context));
 
         context = new Context().setVariable("var1", 3).setVariable("var2", 100.5);
         assertEquals("Evaluation fails", 402.0, expression.evaluate(context));
