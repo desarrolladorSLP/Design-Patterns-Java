@@ -20,4 +20,6 @@
 
 ## Referencias
 
+https://sourcemaking.com/design_patterns/observer
+
 
