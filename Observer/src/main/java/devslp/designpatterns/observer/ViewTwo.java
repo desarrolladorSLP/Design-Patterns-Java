@@ -1,7 +1,9 @@
 package devslp.designpatterns.observer;
 
-/**
- * Created by iuresti on 3/14/17.
- */
-public class ViewTwo {
+public class ViewTwo implements Observer {
+
+    @Override
+    public void update() {
+
+    }
 }
