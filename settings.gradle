@@ -1,10 +1,9 @@
 //Creational
-//include 'Singleton', 'AbstractFactory', 'FactoryMethod', 'Builder', 'Singleton', 'Prototype', 'ObjectPool'
+include 'Singleton', 'AbstractFactory', 'FactoryMethod', 'Builder', 'Singleton', 'Prototype', 'ObjectPool'
 
 //Behavioral
-//include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State', 'ChainOfResponsability', 'Visitor', "Interpreter"
-include 'Interpreter','Observer', 'Strategy'
+include 'Bridge', 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State', 'ChainOfResponsibility', 'Visitor', 'Interpreter', 'Command', 'Flyweight', 'Memento', 'NullObject'
 
 //Structural
-//include 'Adapter', 'Proxy', 'Facade', 'Composite', 'Decorator'
+include 'Adapter', 'Proxy', 'Facade', 'Composite', 'Decorator', 'PrivateClassData'
 
