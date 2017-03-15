@@ -27,5 +27,20 @@ public class ObserverTest {
     }
 
 
+    @Test
+    public void viewTwoObservesSubjectAndItsMethodUpdateMustBeCalled() {
+        Subject subject = new Subject();
+        ViewTwo viewTwo = new ViewTwo();
+        String someMessage = "Some message";
+
+        subject.attach(viewTwo);
+
+        assertEquals(null, viewTwo.getLastMessage());
+
+        subject.setState(someMessage);
+
+        assertEquals(someMessage, viewTwo.getLastMessage());
+
+    }
 
 }
