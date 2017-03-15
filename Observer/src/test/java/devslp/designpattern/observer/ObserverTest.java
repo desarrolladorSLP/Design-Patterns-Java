@@ -1,9 +1,12 @@
 package devslp.designpattern.observer;
 
-import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 import org.junit.Test;
 
+import devslp.designpatterns.observer.Observer;
 import devslp.designpatterns.observer.Subject;
 import devslp.designpatterns.observer.ViewOne;
 import devslp.designpatterns.observer.ViewTwo;
@@ -13,34 +16,30 @@ public class ObserverTest {
     @Test
     public void viewOneObservesSubjectAndItsMethodUpdateMustBeCalled() {
         Subject subject = new Subject();
-        ViewOne viewOne = new ViewOne();
+        Observer observer = mock(ViewOne.class);
         String someMessage = "Some message";
 
-        subject.attach(viewOne);
-
-        assertEquals(null, viewOne.getLastMessage());
+        subject.attach(observer);
 
         subject.setState(someMessage);
+        subject.setState(someMessage);
 
-        assertEquals(viewOne.getLastMessage(), someMessage);
-
+        verify(observer, times(2)).update();
     }
-
 
     @Test
     public void viewTwoObservesSubjectAndItsMethodUpdateMustBeCalled() {
         Subject subject = new Subject();
-        ViewTwo viewTwo = new ViewTwo();
+        Observer observer = mock(ViewTwo.class);
         String someMessage = "Some message";
 
-        subject.attach(viewTwo);
-
-        assertEquals(null, viewTwo.getLastMessage());
+        subject.attach(observer);
 
         subject.setState(someMessage);
+        subject.setState(someMessage);
 
-        assertEquals(someMessage, viewTwo.getLastMessage());
-
+        verify(observer, times(2)).update();
     }
+
 
 }

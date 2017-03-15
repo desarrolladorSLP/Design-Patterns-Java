@@ -16,7 +16,7 @@ public class Subject {
     }
 
     public void setState(String message){
-        observerList.forEach(o -> o.update(message));
+        observerList.forEach(o -> o.update());
     }
 
 }
