@@ -6,7 +6,7 @@ public class ViewTwo implements Observer {
 
     @Override
     public void update(String message) {
-
+        lastMessage = message;
     }
 
     public String getLastMessage() {
