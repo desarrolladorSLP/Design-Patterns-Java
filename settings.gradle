@@ -3,8 +3,7 @@
 
 //Behavioral
 //include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State', 'ChainOfResponsability', 'Visitor', "Interpreter"
-include 'Interpreter'
-
+include 'Interpreter','Observer'
 
 //Structural
 //include 'Adapter', 'Proxy', 'Facade', 'Composite', 'Decorator'
