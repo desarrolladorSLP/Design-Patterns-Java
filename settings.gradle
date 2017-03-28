@@ -5,5 +5,6 @@ include 'Singleton', 'AbstractFactory', 'FactoryMethod', 'Builder', 'Singleton',
 include 'Bridge', 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State', 'ChainOfResponsibility', 'Visitor', 'Interpreter', 'Command', 'Flyweight', 'Memento', 'NullObject'
 
 //Structural
+//
 include 'Adapter', 'Proxy', 'Facade', 'Composite', 'Decorator', 'PrivateClassData'
 
