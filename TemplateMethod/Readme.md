@@ -1,1 +1,5 @@
 # Template Method
+
+## Intent
+
+## Motivation
