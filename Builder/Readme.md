@@ -12,7 +12,14 @@ Una aplicación necesita crear elementos que en conjunto resultan en algo comple
 La especificación del resultado se encuentra en un lugar distinto y la representación necesita ser
 construída en otro lugar.
 
++![Builder General Diagram](builder.gif)
 
+## Actores
+
+- Director
+- Builder
+- Concrete Builder
+- Product
 
 Referencias
 
