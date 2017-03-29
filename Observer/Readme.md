@@ -1,38 +1,40 @@
 # Observer (Behavioral)
->Define una manera para notificar eventos a varias clases
+>Define a way to notify events to many classes
 
-## Problema
-Existe una relación entre un componente que genera eventos y n objetos que podrían 
-estar interesados en ser informados sobre dichos eventos.
+## Problem
+Exists a relation between one component that triggers events and n objects that could be insterested
+in being informed about those events.
 
-## Solución
-1. Crear una una interfaz Observador que implementarán las clases interesadas en ser informadas
-  de los eventos generados por las clases observadas. La clase contendrá un único método update que 
-  será llamado por las clases observadas
-2. Crear una clase abstracta que será extendida por las clases observadas. Esta clase contendrá:
-   * Una lista de los observadores registrados 
-   * Método para registrar nuevos observadores
-   * Método para eliminar observadores registrados
-   * Método que iterando sobre la lista de observadores registrados, notificará uno a uno 
-   de los observadores llamando al método creado por la interfaz Observer
+## Solution
+1. To create an interface Observer which will be implemented by the classes interested in being informed
+ about triggered events by the observable classes. The class will contain a unique method 
+ <code>update</code> that will be called by the observable classes. 
+2. To create an abstract class that will be extended by the observable classes. This abstract class will contain:
+   * A list of registered observers 
+   * Method to register new observers
+   * Method to delete existent observers
+   * Method that iterating through the list of registered observers, will notify them one by one 
+   by calling the method inherited from the Observer interface
 
-## Estructura general
+## General structure
 ![Observer General Diagram](observer.jpg)
 
 
-## Actores
+## Actors
 * Observer
 * Observable
       
-## Algunos usos conocidos
+## Some known uses
  - Swing
  - QT
  - Angular
 
 
 
-## Referencias
+## References
 
 https://sourcemaking.com/design_patterns/observer
+
+https://github.com/wdonet/designPatternsOOP/tree/master/Observer
 
 
