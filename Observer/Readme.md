@@ -29,7 +29,8 @@ in being informed about those events.
  - QT
  - Angular
 
-
+## Example
+![Observer Sample Diagram](observer-sample.png)
 
 ## References
 
