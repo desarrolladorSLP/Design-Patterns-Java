@@ -1,4 +1,4 @@
-package devslp.designpatterns.observer;
+package devslp.designpatterns.observer.manual;
 
 public interface Observer {
 
