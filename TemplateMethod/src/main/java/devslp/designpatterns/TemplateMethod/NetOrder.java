@@ -4,14 +4,13 @@ public class NetOrder extends OrderProcessTemplate
 {
         @Override
         public void doSelect() {
-            System.out.println("Item added to online shopping cart,");
-            System.out.println("Get gift wrap preference,");
+            System.out.println("Item added to online shopping cart.");
             System.out.println("Get delivery address.");
         }
 
         @Override
         public void doPayment() {
-            System.out.println("Online Payment through Paypal.");
+            System.out.println("Online Payment through credit card.");
         }
 
         @Override
