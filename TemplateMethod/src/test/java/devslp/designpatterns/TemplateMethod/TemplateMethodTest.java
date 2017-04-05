@@ -1,8 +1,5 @@
-package TemplateMethod;
+package devslp.designpatterns.TemplateMethod;
 
-import devslp.designpatterns.TemplateMethod.NetOrder;
-import devslp.designpatterns.TemplateMethod.OrderProcessTemplate;
-import devslp.designpatterns.TemplateMethod.StoreOrder;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
