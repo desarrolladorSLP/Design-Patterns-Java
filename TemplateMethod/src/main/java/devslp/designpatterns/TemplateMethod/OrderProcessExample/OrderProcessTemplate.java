@@ -1,4 +1,4 @@
-package devslp.designpatterns.TemplateMethod;
+package devslp.designpatterns.TemplateMethod.OrderProcessExample;
 
 public abstract class OrderProcessTemplate {
 
@@ -13,6 +13,7 @@ public abstract class OrderProcessTemplate {
 
     public abstract void doDelivery();
 
+    /* This is the template method */
     public final void processOrder(boolean isGift) {
         doSelect();
         doPayment();

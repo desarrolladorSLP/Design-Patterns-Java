@@ -1,4 +1,4 @@
-package devslp.designpatterns.TemplateMethod;
+package devslp.designpatterns.TemplateMethod.OrderProcessExample;
 
 public class NetOrder extends OrderProcessTemplate
 {

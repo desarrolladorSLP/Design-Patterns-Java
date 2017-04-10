@@ -1,4 +1,4 @@
-package devslp.designpatterns.TemplateMethod;
+package devslp.designpatterns.TemplateMethod.OrderProcessExample;
 
 import org.junit.Test;
 
