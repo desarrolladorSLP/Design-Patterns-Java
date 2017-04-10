@@ -1,4 +1,4 @@
-package devslp.designpatterns.TemplateMethod.SortMethodTemplateExample;
+package devslp.designpatterns.TemplateMethod.BubbleSortExample;
 
 
 import org.junit.Test;

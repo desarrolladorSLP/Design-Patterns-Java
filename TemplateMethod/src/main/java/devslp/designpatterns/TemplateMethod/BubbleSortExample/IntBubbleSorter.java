@@ -1,12 +1,9 @@
-package devslp.designpatterns.TemplateMethod.SortMethodTemplateExample;
+package devslp.designpatterns.TemplateMethod.BubbleSortExample;
 
-/**
- * Created by eloyhz on 10/04/17.
- */
-public class DoubleBubbleSorter extends BubbleSorter{
-    private double [] array = null;
+public class IntBubbleSorter extends BubbleSorter {
+    private int [] array = null;
 
-    public void sort(double [] theArray) {
+    public void sort(int [] theArray) {
         array = theArray;
         length = theArray.length;
         doSort();
@@ -19,7 +16,7 @@ public class DoubleBubbleSorter extends BubbleSorter{
 
     @Override
     protected void swap(int index) {
-        double temp = array[index-1];
+        int temp = array[index-1];
         array[index-1] = array[index];
         array[index] = temp;
     }

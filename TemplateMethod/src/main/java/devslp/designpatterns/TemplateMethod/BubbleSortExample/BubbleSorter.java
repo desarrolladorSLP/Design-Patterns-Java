@@ -1,4 +1,4 @@
-package devslp.designpatterns.TemplateMethod.SortMethodTemplateExample;
+package devslp.designpatterns.TemplateMethod.BubbleSortExample;
 
 public abstract class BubbleSorter {
     protected int length;
