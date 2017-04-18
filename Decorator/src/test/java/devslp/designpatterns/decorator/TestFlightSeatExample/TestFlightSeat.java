@@ -1,0 +1,46 @@
+package devslp.designpatterns.decorator.TestFlightSeatExample;
+
+
+import devslp.designpatterns.decorator.FlightSeatExample.FlightSeat;
+import devslp.designpatterns.decorator.FlightSeatExample.LiveTV;
+import devslp.designpatterns.decorator.FlightSeatExample.MainCabinSeat;
+import devslp.designpatterns.decorator.FlightSeatExample.WiFi;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class TestFlightSeat {
+    @Test
+    public void testWiFiSeat()  {
+        FlightSeat flightSeat = new MainCabinSeat();
+        flightSeat = new WiFi(flightSeat);
+        assertEquals(flightSeat.getCost(), 5010.0, 0.0);
+        assertEquals(flightSeat.getFacilities(), "Free Food+WiFi");
+    }
+
+    @Test
+    public void testTVSeat()  {
+        FlightSeat flightSeat = new MainCabinSeat();
+        flightSeat = new LiveTV(flightSeat);
+        assertEquals(flightSeat.getCost(), 5005.0, 0.0);
+        assertEquals(flightSeat.getFacilities(), "Free Food+Live TV");
+    }
+
+    @Test
+    public void testWiFiTVSeat()  {
+        FlightSeat flightSeat = new MainCabinSeat();
+        flightSeat = new WiFi(flightSeat);
+        flightSeat = new LiveTV(flightSeat);
+        assertEquals(flightSeat.getCost(), 5015.0, 0.0);
+        assertEquals(flightSeat.getFacilities(), "Free Food+WiFi+Live TV");
+    }
+
+    @Test
+    public void testTVWiFiSeat()  {
+        FlightSeat flightSeat = new MainCabinSeat();
+        flightSeat = new LiveTV(flightSeat);
+        flightSeat = new WiFi(flightSeat);
+        assertEquals(flightSeat.getCost(), 5015.0, 0.0);
+        assertEquals(flightSeat.getFacilities(), "Free Food+Live TV+WiFi");
+    }
+}
