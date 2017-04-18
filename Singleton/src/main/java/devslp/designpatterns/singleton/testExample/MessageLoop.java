@@ -7,21 +7,19 @@ package devslp.designpatterns.singleton.testExample;
 
 import java.util.Random;
 
-/**
- *
- * @author Enrique Guardiola
- */
 public class MessageLoop implements Runnable {
     String name;
-    public MessageLoop(String name){
+
+    public MessageLoop(String name) {
         this.name = name;
     }
+
     public void run() {
         Random rand = new Random();
         long rgenseed = System.currentTimeMillis();
         rand.setSeed(rgenseed);
         try {
-            while(true){
+            while (true) {
                 Thread.sleep(rand.nextInt(500));
                 Logger.getInstance().loggerString(name + " says hi\r\n");
             }
