@@ -22,6 +22,7 @@ public class HappyMealBuilderTest {
 
         employee.setMealBuilder(new HappyMealBuilder());
         employee.makeMeal();
+
         items = employee.getMeal().getItems();
 
         assertEquals("Must have 3 items", 3, items.size());
@@ -39,6 +40,7 @@ public class HappyMealBuilderTest {
         employee.makeMeal();
 
         Meal meal = employee.getMeal();
+
         assertEquals(meal.getTotal(), 63.0, 0);
     }
 

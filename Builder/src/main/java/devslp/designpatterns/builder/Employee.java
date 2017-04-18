@@ -16,6 +16,7 @@ public class Employee {
 
     public void makeMeal() {
         mealBuilder.createNewMeal();
+
         mealBuilder.addBurger();
         mealBuilder.addDrink();
         mealBuilder.addExtras();

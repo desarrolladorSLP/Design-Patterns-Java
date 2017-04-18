@@ -1,27 +1,31 @@
 # Builder (Creational)
 
-- Construye un objeto complejo por pasos. Los cuales se repiten al momento de crear nuevas instancias
-del mismo objeto.
+- It builds a complex object by steps. These steps will be repeated when new instances of the same 
+object are created.
 
-- Separa la construcción de un objeto complejo para que el mismo proceso de construcción sirva
-para crear diferentes representaciones.
+- It divides construction of a complex object so it can be possible to create different representations 
+using the same process
 
-## Problema
+## Problem
 
-Una aplicación necesita crear elementos que en conjunto resultan en algo complejo.
-La especificación del resultado se encuentra en un lugar distinto y la representación necesita ser
-construída en otro lugar.
+An application needs to create the elements of a complex aggregate. The specification for the aggregate 
+exists on secondary storage and one of many representations needs to be built in primary storage.
+ 
 
-+![Builder General Diagram](builder.gif)
+![Builder General Diagram](builder.gif)
 
-## Actores
+## Actors
 
 - Director
 - Builder
 - Concrete Builder
 - Product
 
-Referencias
+## Example
+
+![Builder Example Diagram](builder-example.png)
+
+## References
 
 https://en.wikipedia.org/wiki/Builder_pattern
 https://www.tutorialspoint.com/design_pattern/builder_pattern.htm

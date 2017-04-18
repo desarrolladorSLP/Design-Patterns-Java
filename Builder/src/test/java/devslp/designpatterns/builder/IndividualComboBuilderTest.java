@@ -32,6 +32,7 @@ public class IndividualComboBuilderTest {
 
         employee.setMealBuilder(new IndividualComboBuilder());
         employee.makeMeal();
+
         items = employee.getMeal().getItems();
 
         assertEquals("Must have 3 items", 3, items.size());
