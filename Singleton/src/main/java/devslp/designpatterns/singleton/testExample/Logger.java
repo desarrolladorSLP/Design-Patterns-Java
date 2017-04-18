@@ -12,25 +12,23 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 
-/**
- *
- * @author Enrique Guardiola
- */
 public class Logger {
     private static Logger instance;
-    private Logger(){
+
+    private Logger() {
     }
-    public static synchronized Logger getInstance(){
-        if(instance == null)
+
+    public static synchronized Logger getInstance() {
+        if (instance == null)
             instance = new Logger();
         return instance;
     }
-    public synchronized void loggerString(String str){
-        try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("logFile.txt",true), StandardCharsets.UTF_8))) {
+
+    public synchronized void loggerString(String str) {
+        try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("logFile.txt", true), StandardCharsets.UTF_8))) {
             writer.write(str);
-        } 
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println("Exception: " + ex.getMessage());
-        }  
+        }
     }
 }
