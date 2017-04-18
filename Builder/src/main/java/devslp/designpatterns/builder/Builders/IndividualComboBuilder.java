@@ -4,10 +4,6 @@ import devslp.designpatterns.builder.Burgers.BigMac;
 import devslp.designpatterns.builder.Drinks.Coke;
 import devslp.designpatterns.builder.Extras.Fries;
 
-/**
- * Created by mackaber on 27/03/17.
- */
-
 // Builder
 public class IndividualComboBuilder extends MealBuilder {
 

@@ -1,14 +1,10 @@
 package devslp.designpatterns.builder;
 
-import devslp.designpatterns.builder.Items.Item;
-import devslp.designpatterns.builder.Packings.Packing;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by mackaber on 27/03/17.
- */
+import devslp.designpatterns.builder.Items.Item;
+
 public class Meal {
     private List<Item> items = new ArrayList<>();
 
