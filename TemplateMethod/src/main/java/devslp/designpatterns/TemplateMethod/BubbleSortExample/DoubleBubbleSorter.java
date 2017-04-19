@@ -1,8 +1,5 @@
 package devslp.designpatterns.TemplateMethod.BubbleSortExample;
 
-/**
- * Created by eloyhz on 10/04/17.
- */
 public class DoubleBubbleSorter extends BubbleSorter{
     private double [] array = null;
 
