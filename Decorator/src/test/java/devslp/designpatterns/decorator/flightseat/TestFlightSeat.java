@@ -1,10 +1,6 @@
-package devslp.designpatterns.decorator.TestFlightSeatExample;
+package devslp.designpatterns.decorator.flightseat;
 
 
-import devslp.designpatterns.decorator.FlightSeatExample.FlightSeat;
-import devslp.designpatterns.decorator.FlightSeatExample.LiveTV;
-import devslp.designpatterns.decorator.FlightSeatExample.MainCabinSeat;
-import devslp.designpatterns.decorator.FlightSeatExample.WiFi;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package devslp.designpatterns.decorator.FlightSeatExample;
+package devslp.designpatterns.decorator.flightseat;
 
 public class MainCabinSeat implements FlightSeat {
     @Override

@@ -1,4 +1,4 @@
-package devslp.designpatterns.decorator.FlightSeatExample;
+package devslp.designpatterns.decorator.flightseat;
 
 public abstract class FlightSeatDecorator implements FlightSeat {
     protected FlightSeat flightSeat;
