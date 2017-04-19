@@ -10,7 +10,7 @@ public class TestFlightSeat {
     public void testWiFiSeat()  {
         FlightSeat flightSeat = new MainCabinSeat();
         flightSeat = new WiFi(flightSeat);
-        assertEquals(flightSeat.getCost(), 5010.0, 0.0);
+        assertEquals(flightSeat.getCost(), 510.0, 0.0);
         assertEquals(flightSeat.getFacilities(), "Free Food+WiFi");
     }
 
@@ -18,7 +18,7 @@ public class TestFlightSeat {
     public void testTVSeat()  {
         FlightSeat flightSeat = new MainCabinSeat();
         flightSeat = new LiveTV(flightSeat);
-        assertEquals(flightSeat.getCost(), 5005.0, 0.0);
+        assertEquals(flightSeat.getCost(), 505.0, 0.0);
         assertEquals(flightSeat.getFacilities(), "Free Food+Live TV");
     }
 
@@ -27,7 +27,7 @@ public class TestFlightSeat {
         FlightSeat flightSeat = new MainCabinSeat();
         flightSeat = new WiFi(flightSeat);
         flightSeat = new LiveTV(flightSeat);
-        assertEquals(flightSeat.getCost(), 5015.0, 0.0);
+        assertEquals(flightSeat.getCost(), 515.0, 0.0);
         assertEquals(flightSeat.getFacilities(), "Free Food+WiFi+Live TV");
     }
 
@@ -36,7 +36,7 @@ public class TestFlightSeat {
         FlightSeat flightSeat = new MainCabinSeat();
         flightSeat = new LiveTV(flightSeat);
         flightSeat = new WiFi(flightSeat);
-        assertEquals(flightSeat.getCost(), 5015.0, 0.0);
+        assertEquals(flightSeat.getCost(), 515.0, 0.0);
         assertEquals(flightSeat.getFacilities(), "Free Food+Live TV+WiFi");
     }
 }

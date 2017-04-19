@@ -8,6 +8,6 @@ public class MainCabinSeat implements FlightSeat {
 
     @Override
     public Double getCost() {
-        return 5000.0;
+        return 500.0;
     }
 }
