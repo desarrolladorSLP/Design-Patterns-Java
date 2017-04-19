@@ -1,45 +1,47 @@
 package devslp.designpatterns.decorator.javaio;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import java.io.BufferedInputStream;
-import java.io.FileInputStream;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 
 public class TestLowerCaseInputStream {
+
     @Test
-    public void testInputFromFile()     {
+    public void testInputFromFile() throws IOException {
         int c;
 
-        try {
-            InputStream inputStream =
-                    new LowerCaseInputStream(
-                            new BufferedInputStream(
-                                    new FileInputStream("testInput.txt")));
+        InputStream inputStream =
+                new LowerCaseInputStream(
+                        new BufferedInputStream(
+                                getClass().getClassLoader().getResourceAsStream("testInput.txt")));
 
-            String inputString = "";
-            while((c = inputStream.read()) >= 0) {
-                inputString += c;
-            }
-            assertEquals(inputString, inputString.toLowerCase());
-
-            inputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        String inputString = "";
+        while ((c = inputStream.read()) >= 0) {
+            inputString += (char) c;
         }
+
+        inputStream.close();
+
+        assertEquals(inputString, inputString.toLowerCase());
+
     }
 
-    // Don't know how to test this thing!
     @Test
-    public void testInputFromScanner()  {
-        InputStream inputStream = new LowerCaseInputStream(System.in);
+    public void testInputFromScanner() throws IOException {
+        InputStream stubInputStream = new ByteArrayInputStream("ALguN MeNSaJe ParA PROBAR".getBytes());
+        InputStream inputStream = new LowerCaseInputStream(stubInputStream);
+
         Scanner scanner = new Scanner(inputStream);
+
         String inputLine = scanner.nextLine();
+
         assertEquals(inputLine, inputLine.toLowerCase());
     }
 }
