@@ -1,11 +1,8 @@
 package proxy;
 
-/**
- * Created by devcrack on 11/04/17.
- */
-public interface WizardTower
-{
+public interface WizardTower {
     void enter(Wizard wizard);
-    boolean whois_inside(String name);
+
+    boolean is_inside(String name);
 
 }
