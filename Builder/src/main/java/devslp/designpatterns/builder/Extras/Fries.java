@@ -1,12 +1,9 @@
 package devslp.designpatterns.builder.Extras;
 
 import devslp.designpatterns.builder.Items.Item;
-import devslp.designpatterns.builder.Packings.Packing;
 import devslp.designpatterns.builder.Packings.Cardboard;
+import devslp.designpatterns.builder.Packings.Packing;
 
-/**
- * Created by mackaber on 27/03/17.
- */
 public class Fries implements Item {
     @Override
     public String name() {
