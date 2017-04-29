@@ -28,7 +28,7 @@ public abstract class TerminalIOFactory {
         factories.put(Model.INGENICO320, new Ingenico320IO());
     }
 
-    static TerminalIOFactory getTerminalIO(Model model) {
+    public static TerminalIOFactory getTerminalIO(Model model) {
         return factories.get(model);
     }
 

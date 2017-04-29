@@ -2,7 +2,7 @@ package devslp.designpatterns.abstractfactory;
 
 public interface Printer {
 
-    void printLine(int size, int alignment, String text);
+    void printLine(int ems, int alignment, String text);
 
     void lineFeed();
 

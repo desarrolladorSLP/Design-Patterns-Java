@@ -20,7 +20,7 @@ public class Ingenico320Printer implements Printer {
     }
 
     @Override
-    public void printLine(int size, int alignment, String text) {
+    public void printLine(int ems, int alignment, String text) {
 
     }
 
